@@ -6,8 +6,8 @@
 package com.niit.jdp;
 
 public class Manager extends Employee {
-    int teamSize;
-    int teamRatings;
+    private int teamSize;
+    private int teamRatings;
 
     public int getTeamSize() {
         return teamSize;
