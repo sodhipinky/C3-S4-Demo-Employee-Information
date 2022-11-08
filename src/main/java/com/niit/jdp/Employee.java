@@ -14,7 +14,6 @@ public class Employee {
     private LocalDate dateOfBirth;
     private String address;
     private double salary;
-
     public Employee() {
     }
 
@@ -64,5 +63,9 @@ public class Employee {
 
     public void setSalary(double salary) {
         this.salary = salary;
+    }
+
+    public void work() {
+        System.out.println("Employee is working");
     }
 }
