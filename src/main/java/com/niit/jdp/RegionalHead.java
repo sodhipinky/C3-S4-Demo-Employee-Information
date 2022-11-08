@@ -8,9 +8,9 @@ package com.niit.jdp;
 import java.time.LocalDate;
 
 public class RegionalHead extends Employee {
-    String regionName;
-    int regionPerformance;
-    int reviewRatings;
+    private String regionName;
+    private int regionPerformance;
+    private int reviewRatings;
 
     public RegionalHead() {
     }

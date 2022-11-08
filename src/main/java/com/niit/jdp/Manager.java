@@ -44,8 +44,11 @@ public class Manager extends Employee {
     public double calculateYearlyIncrement() {
         if (teamRatings > 8) {
             return 0.125;
-        } else {
-            return 0;
         }
+        return 0.0;
+    }
+
+    public double annualSalaryAfterIncrement() {
+        return this.getSalary() * calculateYearlyIncrement() + super.getSalary();
     }
 }
