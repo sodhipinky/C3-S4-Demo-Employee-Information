@@ -9,11 +9,11 @@ import java.time.LocalDate;
 
 public class Employee {
     //properties
-    String name;
-    int age;
-    LocalDate dateOfBirth;
-    String address;
-    double salary;
+    private String name;
+    private int age;
+    private LocalDate dateOfBirth;
+    private String address;
+    private double salary;
 
     public Employee() {
     }
