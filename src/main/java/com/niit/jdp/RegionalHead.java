@@ -52,4 +52,11 @@ public class RegionalHead extends Employee {
     public void setReviewRatings(int reviewRatings) {
         this.reviewRatings = reviewRatings;
     }
+
+    public double calculateYearlyIncrement() {
+        if (regionPerformance > 8 && reviewRatings > 7) {
+            return 0.105;
+        }
+        return 0;
+    }
 }
