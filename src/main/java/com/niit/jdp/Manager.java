@@ -40,4 +40,12 @@ public class Manager extends Employee {
         System.out.println("I am managing my team");
         super.work(); //super keyword is used to call the method of the parent class
     }
+
+    public double calculateYearlyIncrement() {
+        if (teamRatings > 8) {
+            return 0.125;
+        } else {
+            return 0;
+        }
+    }
 }
