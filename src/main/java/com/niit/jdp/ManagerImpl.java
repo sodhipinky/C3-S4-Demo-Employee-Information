@@ -15,6 +15,12 @@ public class ManagerImpl {
                 "Delhi",
                 50000,
                 10,
-                5);
+                9);
+        System.out.println("manager.getName() = " + manager.getName());
+        System.out.println("manager.getTeamRatings() = " + manager.getTeamRatings());
+        System.out.println("manager.getSalary() = " + manager.getSalary());
+        manager.calculateYearlyIncrement();
+        manager.annualSalaryAfterIncrement();
+        System.out.println("manager.getSalary() = " + manager.getSalary());
     }
 }

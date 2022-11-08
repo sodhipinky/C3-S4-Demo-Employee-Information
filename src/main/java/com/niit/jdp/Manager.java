@@ -48,7 +48,8 @@ public class Manager extends Employee {
         return 0.0;
     }
 
-    public double annualSalaryAfterIncrement() {
-        return this.getSalary() * calculateYearlyIncrement() + super.getSalary();
+    public void annualSalaryAfterIncrement() {
+        double incrementedSalary = this.getSalary() * calculateYearlyIncrement() + this.getSalary();
+        this.setSalary(incrementedSalary);
     }
 }

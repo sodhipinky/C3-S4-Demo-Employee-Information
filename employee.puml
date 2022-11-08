@@ -1,0 +1,47 @@
+@startuml
+class com.niit.jdp.Manager {
+- int teamSize
+- int teamRatings
++ int getTeamSize()
++ void setTeamSize(int)
++ int getTeamRatings()
++ void setTeamRatings(int)
++ void managing()
++ double calculateYearlyIncrement()
++ double annualSalaryAfterIncrement()
+}
+class com.niit.jdp.Employee {
+- String name
+- int age
+- LocalDate dateOfBirth
+- String address
+- double salary
++ String getName()
++ void setName(String)
++ int getAge()
++ void setAge(int)
++ LocalDate getDateOfBirth()
++ void setDateOfBirth(LocalDate)
++ String getAddress()
++ void setAddress(String)
++ double getSalary()
++ void setSalary(double)
++ void work()
++ double calculateYearlyIncrement()
+}
+class com.niit.jdp.RegionalHead {
+- String regionName
+- int regionPerformance
+- int reviewRatings
++ String getRegionName()
++ void setRegionName(String)
++ int getRegionPerformance()
++ void setRegionPerformance(int)
++ int getReviewRatings()
++ void setReviewRatings(int)
+}
+
+
+com.niit.jdp.Employee <|-- com.niit.jdp.Manager
+com.niit.jdp.Employee <|-- com.niit.jdp.RegionalHead
+@enduml
