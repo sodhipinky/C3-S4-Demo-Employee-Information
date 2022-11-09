@@ -22,5 +22,6 @@ public class ManagerImpl {
         manager.calculateYearlyIncrement();
         manager.annualSalaryAfterIncrement();
         System.out.println("manager.getSalary() = " + manager.getSalary());
+        System.out.println("manager = " + manager);
     }
 }

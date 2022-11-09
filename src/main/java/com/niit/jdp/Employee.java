@@ -72,4 +72,13 @@ public class Employee {
     public double calculateYearlyIncrement() {
         return 0.0;
     }
+
+    @Override
+    public String toString() {
+        return "name='" + name + '\'' +
+                ", age=" + age +
+                ", dateOfBirth=" + dateOfBirth +
+                ", address='" + address + '\'' +
+                ", salary=" + salary;
+    }
 }

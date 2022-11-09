@@ -52,4 +52,11 @@ public class Manager extends Employee {
         double incrementedSalary = this.getSalary() * calculateYearlyIncrement() + this.getSalary();
         this.setSalary(incrementedSalary);
     }
+
+    @Override
+    public String toString() {
+        return super.toString() +
+                "teamSize=" + teamSize +
+                ", teamRatings=" + teamRatings;
+    }
 }
